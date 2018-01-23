@@ -25,7 +25,7 @@ Figure-1 shows a trained model of neural network without using any regularizatio
 So, what is dropout? Dropout is a method to sample sub-networks from a bigger network (as shown in Figure-2). It is a form of model averaging, where predictions of final trained network can be considered as averaging predictions of many smaller networks from a subset of a big network. It effectively reduces capacity of network, and prevents model from over-fitting the data.
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/images/picture5.png){:height="80%" width="80%"}
+![_config.yml]({{ site.baseurl }}/images/Picture5.png){:height="80%" width="80%"}
 {: refdef}
 
 {:refdef: style="text-align: center;"}
@@ -42,7 +42,7 @@ Once we decide on an initial architecture for our big network (say original netw
 Once we make some initial decisions on #1 and #2, we can discuss what is going on during training and testing of the network:
 
 ### Training:
-![_config.yml]({{ site.baseurl }}/images/picture1.png){:height="100%" width="100%"}
+![_config.yml]({{ site.baseurl }}/images/Picture1.png){:height="100%" width="100%"}
 
 {:refdef: style="text-align: center;"}
 **Figure-3**
@@ -53,7 +53,7 @@ As depicted in Figure-3 and Figure-4, for each forward pass during training, we 
 In coding, this is achieved by applying a binary mask to the output of each dropout layer as shown in Figure-3. Elements of binary mask, [0, 1], are drawn independently from a Bernoulli distribution, and each has a probability **p** of being 1. Final output of dropout layer is result of element-wise multiplication of **M*A**, where **M** is the mask, and **A** is output of layer without mask.
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/images/picture6.png){:height="70%" width="70%"}
+![_config.yml]({{ site.baseurl }}/images/Picture6.png){:height="70%" width="70%"}
 {: refdef}
 {:refdef: style="text-align: center;"}
 **Figure-4**
