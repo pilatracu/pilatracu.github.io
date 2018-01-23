@@ -15,7 +15,7 @@ Figure-1 shows a trained model of neural network without using any regularizatio
 
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/images/unregularized_training_1__test_0.92.png){:height="90%" width="90%"}
+![_config.yml]({{ site.baseurl }}/images/unregularized_training_1__test_0.92.PNG){:height="90%" width="90%"}
 {: refdef}
 {:refdef: style="text-align: center;"}
 **Figure-1**
