@@ -397,7 +397,7 @@ blockquote {
 
 @media (max-width:999px) {
     .featured-box-img-cover {
-        height: 359px;
+        height: 500px;
     }
 
     .alertbar {
