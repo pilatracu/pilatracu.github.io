@@ -4,7 +4,7 @@ title:  "Probabilistic View of Dropout in Neural Networks"
 author: Talip Ucar
 comments: true
 categories: [Deep learning]
-image: {{ site.baseurl }}/assets/images/1000_gif_cropped.gif
+image: https://pilatracu.github.io/assets/images/1000_gif_cropped.gif
 featured: true
 ---
 
