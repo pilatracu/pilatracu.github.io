@@ -22,7 +22,7 @@ Figure-1 shows a trained model of neural network without using any regularizatio
 
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/assets/images/unregularized_training_1__test_0.92.PNG){:height="90%" width="90%"}
+![_config.yml](/assets/images/unregularized_training_1__test_0.92.PNG){:height="90%" width="90%"}
 {: refdef}
 {:refdef: style="text-align: center;"}
 **Figure-1**
@@ -32,7 +32,7 @@ Figure-1 shows a trained model of neural network without using any regularizatio
 So, what is dropout? Dropout is a method to sample sub-networks from a bigger network (as shown in Figure-2). It is a form of model averaging, where predictions of final trained network can be considered as averaging predictions of many smaller networks from a subset of a big network. It effectively reduces capacity of network, and prevents model from over-fitting the data.
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/assets/images/Picture5.png){:height="80%" width="80%"}
+![_config.yml](/assets/images/Picture5.png){:height="80%" width="80%"}
 {: refdef}
 
 {:refdef: style="text-align: center;"}
@@ -49,7 +49,7 @@ Once we decide on an initial architecture for our big network (say original netw
 Once we make some initial decisions on #1 and #2, we can discuss what is going on during training and testing of the network:
 
 ### Training:
-![_config.yml]({{ site.baseurl }}/assets/images/Picture1.png){:height="100%" width="100%"}
+![_config.yml](/assets/images/Picture1.png){:height="100%" width="100%"}
 
 {:refdef: style="text-align: center;"}
 **Figure-3**
@@ -60,7 +60,7 @@ As depicted in Figure-3 and Figure-4, for each forward pass during training, we 
 In coding, this is achieved by applying a binary mask to the output of each dropout layer as shown in Figure-3. Elements of binary mask, [0, 1], are drawn independently from a Bernoulli distribution, and each has a probability **p** of being 1. Final output of dropout layer is result of element-wise multiplication of **M*A**, where **M** is the mask, and **A** is output of layer without mask.
 
 {:refdef: style="text-align: center;"}
-![_config.yml]({{ site.baseurl }}/assets/images/Picture6.png){:height="70%" width="70%"}
+![_config.yml](/assets/images/Picture6.png){:height="70%" width="70%"}
 {: refdef}
 {:refdef: style="text-align: center;"}
 **Figure-4**
@@ -70,8 +70,8 @@ In coding, this is achieved by applying a binary mask to the output of each drop
 ### Testing:
 During testing, dropout is turned off (i.e. there is no binary mask) so that we use our original big network with final weights learned during training (i.e. all units are active). Since we are using all units of network, we need to scale down output of each dropout layer by their respective probability **p** to keep output at test time same as expected output at training time. We can do this by scaling outgoing weights of dropout layer with **p**. This scaling of weights equates predictions of big network to average predictions of many sub-networks within big network.
 
-![_config.yml]({{ site.baseurl }}/assets/images/1000_gif_cropped.gif){:height="100%" width="100%"}
-![_config.yml]({{ site.baseurl }}/assets/images/scaled_net_1000.png){:height="100%" width="100%"}
+![_config.yml](/assets/images/1000_gif_cropped.gif){:height="100%" width="100%"}
+![_config.yml](/assets/images/scaled_net_1000.png){:height="100%" width="100%"}
 {:refdef: style="text-align: center;"}
 **Figure-5**
 {: refdef}
@@ -92,8 +92,8 @@ I should note that although weight-scaling is an approximation to geometric mean
 
 
 
-![_config.yml]({{ site.baseurl }}/assets/images/10K_gif_cropped.gif){:height="100%" width="100%"}
-![_config.yml]({{ site.baseurl }}/assets/images/scaled_net_10000.png){:height="100%" width="100%"}
+![_config.yml](/assets/images/10K_gif_cropped.gif){:height="100%" width="100%"}
+![_config.yml](/assets/images/scaled_net_10000.png){:height="100%" width="100%"}
 {:refdef: style="text-align: center;"}
 **Figure-6**
 {: refdef}
@@ -103,7 +103,7 @@ Now that we are done with how dropout works, we can move onto subject of this po
 ## Probabilistic View
 Figure-7 shows the predictions of a single sub-network as well as predictions of big network with scaled-weights (same as Figure-6, only difference is that it shows predictions of a single sub-network, rather than a simulation using many sub-networks).
 
-![_config.yml]({{ site.baseurl }}/assets/images/dropout_10000.png){:height="100%" width="100%"}
+![_config.yml](/assets/images/dropout_10000.png){:height="100%" width="100%"}
 {:refdef: style="text-align: center;"}
 **Figure-7**
 {: refdef}
@@ -117,7 +117,7 @@ Lastly, it should be mentioned that predictions of scaled big network comes with
 And for fun, Figure-8 shows a case where more data is added at one corner of plot to see how predictions of sub-networks evolve, compared to Figure-6 (everything else being equal).
 
 
-![_config.yml]({{ site.baseurl }}/assets/images/10K_gif_cropped_more_data.gif){:height="100%" width="100%"}
+![_config.yml](/assets/images/10K_gif_cropped_more_data.gif){:height="100%" width="100%"}
 {:refdef: style="text-align: center;"}
 **Figure-8**
 {: refdef}
