@@ -4,7 +4,7 @@ title: "Test"
 description: "A blog for all things Machine Learning."
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.jpg'
-baseurl: https://pilatracu.github.io/
+baseurl: 
 google_analytics: ''
 disqus: ''
 mailchimp-list: ''
