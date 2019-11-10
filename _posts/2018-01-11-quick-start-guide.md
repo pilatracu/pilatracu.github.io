@@ -6,7 +6,6 @@ comments: true
 categories: [Deep learning]
 image: (/assets/images/1000_gif_cropped.gif){:height="100%" width="100%"}
 featured: true
-hidden: true
 ---
 
 
