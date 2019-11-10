@@ -11,7 +11,6 @@ featured: true
 
 
 
-![_config.yml](/assets/images/1000_gif_cropped.gif){:height="100%" width="100%"}
 
 
 Dropout has been one of popular techniques to regularize Neural Networks in last couple of years. Before a discussion on probabilistic view of dropout, it is worth reviewing how dropout works. For the sake of discussion, I will use a toy example (shown in Figure-1), and a relatively small neural network. Size of network is 2x30x10x3x1 :  A four layer network with an input layer, 3 hidden layers, and output layer ( Choice of this architecture was rather random ).
