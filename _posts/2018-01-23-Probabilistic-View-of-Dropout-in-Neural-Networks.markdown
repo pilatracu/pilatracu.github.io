@@ -1,9 +1,16 @@
 ---
 layout: post
-date:   2018-01-23 12:00:00
+title:  "Probabilistic View of Dropout in Neural Networks"
+author: Talip Ucar
 comments: true
-title: Probabilistic View of Dropout in Neural Networks
+categories: [Deep learning]
+image: /images/1000_gif_cropped.gif
+featured: true
+hidden: true
 ---
+
+
+
 
 ![_config.yml]({{ site.baseurl }}/images/1000_gif_cropped.gif){:height="100%" width="100%"}
 
