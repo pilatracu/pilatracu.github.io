@@ -6,8 +6,8 @@ logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.jpg'
 baseurl: 
 google_analytics: ''
-disqus: ''
-mailchimp-list: ''
+disqus: 'https-pilatracu-github-io'
+mailchimp-list: 'UA-153800930-1'
 include: ["_pages"]
 permalink: /:title/
 
