@@ -5,9 +5,9 @@ description: "A blog for all things Machine Learning."
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.jpg'
 baseurl: 
-google_analytics: ''
+google_analytics: 'UA-112788446-1'
 disqus: 'https-pilatracu-github-io'
-mailchimp-list: 'UA-153800930-1'
+mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
