@@ -22,6 +22,15 @@ authors:
     twitter: 
     description: ""
 
+  clement:
+    name: Clement
+    display_name: Clement Wan
+    gravatar: https://pilatracu.github.io/assets/images/avatar.jpg
+    email: clemento341@gmail.com
+    web: 
+    twitter: https://twitter.com/cmclementwan
+    description: ""
+    
 
 # Plugins
 plugins:
